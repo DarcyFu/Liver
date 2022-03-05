@@ -133,7 +133,7 @@ if __name__ == '__main__':
     transforms.ToTensor(),
     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ])
-
+    #test would't use image processing
     test_transforms = transforms.Compose([
     transforms.Resized(224),
     transforms.RandomHorizontalFlip(),
